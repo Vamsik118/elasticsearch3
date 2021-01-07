@@ -2,7 +2,7 @@ version: '3.3'
 services:
   elasticsearch-three:
     container_name: elasticsearch-three
-    image: docker.elastic.co/elasticsearch/elasticsearch:6.8
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.8.13
     user: elasticsearch
     command: ["sh", "-c", "bin/elasticsearch-plugin list | grep -q discovery-ec2 || bin/elasticsearch-plugin install discovery-ec2 --batch && ./bin/elasticsearch"]
     environment:
