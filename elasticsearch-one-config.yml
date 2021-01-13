@@ -1,5 +1,5 @@
 cluster.name: testindex
-node.name: test-es-two
+node.name: test-es-three
 network.host: 0.0.0.0
 network.publish_host: _ec2_
 discovery.zen.hosts_provider: ec2
@@ -13,6 +13,4 @@ node.master: true
 discovery.zen.minimum_master_nodes: 3
 plugin.mandatory: discovery-ec2
 http.port: 9200
-search.max_buckets: 1000
-indices.breaker.request.limit: 40%
-# logger.org.elasticsearch.discovery.ec2: TRACE
+discovery.ec2.groups: sg-0cae955785d0c5ed2

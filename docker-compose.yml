@@ -21,4 +21,4 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: /var/enc/db/elasticsearch1/data
+      device: /var/enc/db/elasticsearch3/data
