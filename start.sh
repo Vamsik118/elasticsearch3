@@ -30,3 +30,4 @@ sudo swapoff -a
 sudo ulimit -n 65535
 sudo sysctl -w net.ipv4.tcp_retries2=5
 sudo mkdir -p /var/enc/db/elasticsearch3/data
+sudo docker-compose up -d
