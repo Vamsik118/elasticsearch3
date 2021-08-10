@@ -10,12 +10,15 @@ services:
     volumes:
       - esdata-one:/usr/share/elasticsearch/data
       - ./elasticsearch-one-config.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - es-logs-three:/usr/share/elasticsearch/logs
+      - ./log4j2.properties:/usr/share/elasticsearch/config/log4j2.properties
     ports:
       - 9200:9200
       - 9300:9300
     restart: always
 
 volumes:
+  es-logs-three: {}
   esdata-one:
     driver: local
     driver_opts:
